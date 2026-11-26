@@ -1,3 +1,4 @@
+"""
 class Solution(object):
     def canAliceWin(self, n):
         x=10
@@ -12,7 +13,18 @@ class Solution(object):
             return True           
 
 
-               
+"""
+class Solution(object):
+    def canAliceWin(self, n):
+        x = 10
+        i = 0
+
+        while n >= x:
+            n -= x
+            x -= 1
+            i += 1
+
+        return i % 2 == 1               
 
 
         
